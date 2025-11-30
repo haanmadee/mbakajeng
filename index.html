@@ -1,13 +1,60 @@
-<img src="ajeng.png" class="zoom-image">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mbak Ajeng</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #ffffff;
+    }
 
-<style>
-  .zoom-image {
-    width: 100%;
-    transition: 0.5s ease-in-out;
-    display: block;
-  }
+    .image-wrapper {
+      width: 100%;
+      max-width: 480px;
+      overflow: visible;
+    }
 
-  .zoom-image:hover {
-    transform: scale(1.12);
-  }
-</style>
+    .zoom-image {
+      width: 100%;
+      transition: 0.5s ease-in-out;
+      display: block;
+    }
+
+    .zoom-image:hover {
+      transform: scale(1.12);
+    }
+
+    .btn {
+      margin-top: 20px;
+      background: #b80030;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #8b0025;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="image-wrapper">
+    <img src="images/ajeng.png" alt="Ajeng" class="zoom-image"/>
+  </div>
+
+  <a href="about.html" class="btn">About Me</a>
+
+</body>
+</html>
